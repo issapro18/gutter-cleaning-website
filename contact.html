@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | CleanFlow Gutter Cleaning</title>
+  <title>Contact | AquaFlow</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Request a free gutter cleaning quote or book your service.">
   <link rel="stylesheet" href="style.css">
@@ -10,7 +10,7 @@
 <body>
 <header>
   <div class="container navbar">
-    <div class="logo">CleanFlow <span>Gutter Cleaning</span></div>
+    <div class="logo">AquaFlow <span>Gutter Cleaning</span></div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -35,59 +35,46 @@
           <h2>Contact Form</h2>
           <p>Fill this out and we’ll respond as soon as possible.</p>
 
-          <form method="post" action="#">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input id="name" name="name" type="text" placeholder="John Doe" required>
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567">
-              </div>
-            </div>
+          <form name="contact"
+      method="POST"
+      action="/thanks.html"
+      data-netlify="true"
+      netlify-honeypot="bot-field">
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required>
-            </div>
+  <!-- Netlify honeypot (spam trap) -->
+  <p style="display:none;">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
 
-            <div class="form-group">
-              <label for="address">Service Address</label>
-              <input id="address" name="address" type="text" placeholder="Street, city, postal code">
-            </div>
+  <!-- (Optional but recommended) explicit form-name -->
+  <input type="hidden" name="form-name" value="contact" />
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="stories">Number of Storeys</label>
-                <input id="stories" name="stories" type="text" placeholder="1, 1.5, 2, etc.">
-              </div>
-              <div class="form-group">
-                <label for="timeline">Preferred Timeline</label>
-                <input id="timeline" name="timeline" type="text" placeholder="Asap, this week, etc.">
-              </div>
-            </div>
+  <!-- your existing fields -->
+  <label>Full Name</label>
+  <input name="name" type="text" required />
 
-            <div class="form-group">
-              <label for="message">Anything we should know?</label>
-              <textarea id="message" name="message" placeholder="Tell us about your gutters, any known issues, or ideal dates."></textarea>
-            </div>
+  <label>Email</label>
+  <input name="email" type="email" required />
 
-            <button type="submit" class="btn btn-primary">Send Request</button>
-          </form>
+  <label>Message</label>
+  <textarea name="message"></textarea>
+
+  <button type="submit">Send Request</button>
+</form>
+
         </div>
 
         <aside class="contact-info-box">
           <h3>Contact Details</h3>
           <p>Prefer to reach out directly? No problem.</p>
           <ul class="contact-list">
-            <li><strong>Phone:</strong> (555) 123-4567</li>
-            <li><strong>Email:</strong> info@cleanflowgutters.com</li>
-            <li><strong>Service area:</strong> Your local city & surrounding areas</li>
+            <li><strong>Phone:</strong> (514) 562-8276</li>
+            <li><strong>Email:</strong> aquaflow.operations@gmail.com</li>
+            <li><strong>Area:</strong> Montreal & surrounding areas</li>
           </ul>
 
-          <h3 style="margin-top: 1rem;">Typical Response Time</h3>
-          <p>We usually respond to quote requests within one business day.</p>
+          <h3 style="margin-top: 1rem;">Response Time</h3>
+          <p>We respond to quote requests within two business days. If it is an emergency, please reach us at our phone number.</p>
         </aside>
       </div>
     </div>
@@ -96,8 +83,8 @@
 
 <footer>
   <div class="container footer-inner">
-    <span>© <span id="year"></span> CleanFlow Gutter Cleaning. All rights reserved.</span>
-    <span>Need fast service? Mention “urgent” in your message.</span>
+    <span>© <span id="year"></span> AquaFlow Gutter Cleaning. All rights reserved.</span>
+    <span>Need fast service? Mention “urgent” in your message or give us a call.</span>
   </div>
 </footer>
 
