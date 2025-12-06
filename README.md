@@ -1,1 +1,1 @@
-# gutter-cleaning-website
+# gutter-cleaning-website, just a personal project
